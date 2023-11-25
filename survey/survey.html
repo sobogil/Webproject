@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>설문조사 페이지</title>
+</head>
+<body>
+    <div class="survey-container">
+        <h1>설문조사</h1>
+        <form id="survey-form">
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">이메일:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="age">나이:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label>성별:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">남성</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">여성</label>
+
+            <label>가장 선호하는 주스를 선택하세요:</label>
+            <select id="topic" name="topic" required>
+                <option value="technology">탐산음료</option>
+                <option value="travel">이온음료</option>
+                <option value="food">과일음료</option>
+                <option value="sports">기타</option>
+            </select>
+
+            <button type="submit">제출</button>
+        </form>
+    </div>
+    <script src="survey.js"></script>
+</body>
+</html>
